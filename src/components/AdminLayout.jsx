@@ -17,10 +17,11 @@ function AdminLayout() {
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>                   
+                </div>                  
                 <nav>
                     <ul className="nav-links">
                         <li><NavLink to="/home" className={({ isActive }) => isActive ? "active-nav-link" : ""} >Admin Home</NavLink></li>
+                         <li><NavLink to="/products/:id " className={({ isActive }) => isActive ? "active-nav-link" : ""} >Product Detail page</NavLink></li>   
                         <li><NavLink to="/add-product" className={({ isActive }) => isActive ? "active-nav-link" : ""} >Add Product</NavLink></li>   
                         <li> <button onClick={logout}>Logout</button></li>                   
                     </ul>
